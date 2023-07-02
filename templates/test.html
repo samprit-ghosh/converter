@@ -1,0 +1,271 @@
+
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/syle.css')}}">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+<link rel="stylesheet" href="../static/css/syle.css">
+
+
+   <!-- <script type="text/javascript" src="https://example.com/fontawesome/v5.15.4/js/conflict-detection.js"> -->
+      </script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-f/fUgGFoU6dHv6awuU6kX9PGLu+EO8nE7VnW8cUxV6QJN6Uczn6/1aZYdZ+7b/39ln9XV7Rk8+PWmF75rjb5w==" crossorigin="anonymous" /> -->
+     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-f/fUgGFoU6dHv6awuU6kX9PGLu+EO8nE7VnW8cUxV6QJN6Uczn6/1aZYdZ+7b/39ln9XV7Rk8+PWmF75rjb5w==" crossorigin="anonymous" /> -->
+    <!-- <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src=""></script>
+    <script type="text/javascript">
+    $(window).on('scroll',function(){
+        if($(window).scrollTop()){
+            $('nav').addClass('black');
+        }
+        else{
+            $('nav').removeClass('black');
+        }
+    })
+/*menu button onclick function*/         $(document).ready(function(){
+            $('.menu h4').click(function(){
+                $("nav ul").toggleClass("active")
+        })
+        })
+    </script>
+   
+</head>
+
+    <div class="responsive-bar">
+ 
+        <div class="menu">
+        <h4>Menu</h4>
+        </div>
+    </div>
+    <nav>
+     
+     <ul>
+        <li><a href="/test">Home</a></li>
+         <li><a href="#">About us</a></li>
+         <li><a href="#">Portfolio</a></li>
+         <li><a href="/contact">Contact Us</a></li>
+        </ul>
+    </nav>
+    
+       
+      
+        
+
+     
+    </header>
+    
+    <!-- Section One -->
+    <body>
+
+        <div class="body-inner">
+    <section class="section-one">
+      <h2 class="header">Build. Grow. Serve.</h2>
+      <p class="section-one-paragraph">We are investing $3 million over the next three years Build |Grow| Serve program, created to support and empower Black underrepresented communities</p>
+      <a href="/" class="learn-more-btn">Learn More </a> 
+    </section>
+    
+    <!-- Section Two -->
+    <section class="section-two">
+     <div class="two-masking">
+        <center>
+            <br>
+            <h1 class="header-two">
+                Upload pdf
+
+            </h1>
+            <br>
+            <form action="/index" method="POST" enctype="multipart/form-data">
+           
+            
+             
+           <div style="display: flex;justify-content: center; ">
+                    <label for="inputTag">
+              
+                   <div style="display: flex;" class="learn-more-btn-upload">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="46" height="56" fill="currentColor" class="bi bi-file-pdf" viewBox="0 0 16 16">
+                            <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z"/>
+                            <path d="M4.603 12.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.701 19.701 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.187-.012.395-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.065.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.716 5.716 0 0 1-.911-.95 11.642 11.642 0 0 0-1.997.406 11.311 11.311 0 0 1-1.021 1.51c-.29.35-.608.655-.926.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.27.27 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.647 12.647 0 0 1 1.01-.193 11.666 11.666 0 0 1-.51-.858 20.741 20.741 0 0 1-.5 1.05zm2.446.45c.15.162.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.881 3.881 0 0 0-.612-.053zM8.078 5.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z"/>
+                          </svg>
+                          <h3 class="learn-more-btn-click">Click Me</h3>  
+                        </div>
+                        
+                      <input id="inputTag" type="file" class="display" required>
+                      
+                  
+                      
+                     
+                    </label>
+                
+                  
+                
+<label>
+<input type="submit" value="Upload" class="upload">
+</label>
+</div>
+
+           </form>
+          
+           <script>
+           (function(e,t,n){var r=e.querySelectorAll("html")[0];r.className=r.className.replace(/(^|s)no-js(s|$)/,"$1js$2")})(document,window,0);
+           var inputs = document.querySelectorAll( '.inputfile' );
+Array.prototype.forEach.call( inputs, function( input )
+{
+	var label	 = input.nextElementSibling,
+		labelVal = label.innerHTML;
+
+	input.addEventListener( 'change', function( e )
+	{
+		var fileName = '';
+		if( this.files && this.files.length > 1 )
+			fileName = ( this.getAttribute( 'data-multiple-caption' ) || '' ).replace( '{count}', this.files.length );
+		else
+			fileName = e.target.value.split( '\' ).pop();
+
+		if( fileName )
+			label.querySelector( 'span' ).innerHTML = fileName;
+		else
+			label.innerHTML = labelVal;
+	});
+});
+     
+
+
+           </script>
+
+           <br><br>
+           <span id="imageName" ></span>
+                  <script>
+                      let input = document.getElementById("inputTag");
+                      let imageName = document.getElementById("imageName")
+              
+                      input.addEventListener("change", ()=>{
+                          let inputImage = document.querySelector("input[type=file]").files[0];
+              
+                          imageName.innerText = inputImage.name;
+                      })
+                  </script>
+        </center>
+        </div>
+
+      
+    </section>
+    
+   
+    <section class="section-three">
+      <h3>We enrich human lives through the thoughtful application of design and technology</h3>
+    </section>
+    
+
+    <section class="section-four">
+      <div class="flex-group">
+        <div id="demo06" class="hover06 column">
+           
+          <img src="https://images.unsplash.com/photo-1667490111717-21a3d34c58d0?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2Njk2NzUwODU&ixlib=rb-4.0.3&q=80">
+      
+        </div>
+        <div class="content-container">
+          <p>In the summer of 2020, we reported our representation data and committed to doing so annually. One year later, we are please to share an update on our goals, and progress, and the work that still needs to be done.</p>
+          <a href="/" class="learn-more-btn section-four-btn">Learn More</a>
+        </div>
+      </div>
+    </section>
+    
+    
+    <section class="section-five">
+      <div class="flex-group section-five-flex-group">
+        <div>
+          <img src="https://images.unsplash.com/photo-1667845210425-5f805be2f355?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2Njk2NzUwODU&ixlib=rb-4.0.3&q=80">
+        </div>
+        <div class="content-container">
+          <p>In the summer of 2020, we reported our representation data and committed to doing so annually. One year later, we are please to share an update on our goals, and progress, and the work that still needs to be done.</p>
+          <a href="/" class="learn-more-btn section-four-btn">Read More</a>
+        </div>
+      </div>
+    </section>
+    
+
+    <section class="section-six">
+      <div class="flex-group">
+        <div>
+          <img src="https://images.unsplash.com/photo-1667212805718-771e5ebdd8a5?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2Njk2NzYyMjg&ixlib=rb-4.0.3&q=80">
+        </div>
+        <div class="content-container">
+          <p>In the summer of 2020, we reported our representation data and committed to doing so annually. One year later, we are please to share an update on our goals, and progress, and the work that still needs to be done.</p>
+          <a href="/" class="learn-more-btn section-four-btn">What We Do</a>
+        </div>
+      </div>
+    </section>  
+    
+
+  
+    <section class="section-seven">
+          <h3>We enrich human lives through the thoughtful application of design and technology</h3>
+          <a href="/" class="learn-more-btn section-seven-btn">Our Work</a>  
+    </section>
+    
+  <!-- Section Eight -->
+    <section class="section-eight">
+      <div class="flex-group-eight">
+        <div>
+          <img src="https://images.unsplash.com/photo-1667684550725-71e60ab8368e?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2Njk2Nzc2NDk&ixlib=rb-4.0.3&q=80">
+          <h4>Levi's</h4>
+          <p>We partner with Levi's, an icon of American industry and culture, to to reimagine levi.com for a new generation of shoppers and the digital future of retail.</p>
+        </div>
+        
+        <div>
+          <img src="https://images.unsplash.com/photo-1666845267403-191d298cf198?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2Njk2OTEzOTc&ixlib=rb-4.0.3&q=80">
+          <h4>Dropbox Brand Campaign</h4>
+          <p>Dropbox is on a path to becoming a multi-product company. To bring their customers now and old along for that journey, we helped reimagine how Dropbox engages with their audience.</p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Section Nine -->
+    
+    <section class="section-nine">
+      <div class="logo-container">
+      <a href="/contact>"> <svg viewBox="0 0 448 512" width="100" title="address-book">
+    <path d="M436 160c6.6 0 12-5.4 12-12v-40c0-6.6-5.4-12-12-12h-20V48c0-26.5-21.5-48-48-48H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h320c26.5 0 48-21.5 48-48v-48h20c6.6 0 12-5.4 12-12v-40c0-6.6-5.4-12-12-12h-20v-64h20c6.6 0 12-5.4 12-12v-40c0-6.6-5.4-12-12-12h-20v-64h20zm-228-32c35.3 0 64 28.7 64 64s-28.7 64-64 64-64-28.7-64-64 28.7-64 64-64zm112 236.8c0 10.6-10 19.2-22.4 19.2H118.4C106 384 96 375.4 96 364.8v-19.2c0-31.8 30.1-57.6 67.2-57.6h5c12.3 5.1 25.7 8 39.8 8s27.6-2.9 39.8-8h5c37.1 0 67.2 25.8 67.2 57.6v19.2z" />
+  </svg></a> 
+        <svg viewBox="0 0 576 512" width="100" title="trophy">
+    <path d="M552 64H448V24c0-13.3-10.7-24-24-24H152c-13.3 0-24 10.7-24 24v40H24C10.7 64 0 74.7 0 88v56c0 35.7 22.5 72.4 61.9 100.7 31.5 22.7 69.8 37.1 110 41.7C203.3 338.5 240 360 240 360v72h-48c-35.3 0-64 20.7-64 56v12c0 6.6 5.4 12 12 12h296c6.6 0 12-5.4 12-12v-12c0-35.3-28.7-56-64-56h-48v-72s36.7-21.5 68.1-73.6c40.3-4.6 78.6-19 110-41.7 39.3-28.3 61.9-65 61.9-100.7V88c0-13.3-10.7-24-24-24zM99.3 192.8C74.9 175.2 64 155.6 64 144v-16h64.2c1 32.6 5.8 61.2 12.8 86.2-15.1-5.2-29.2-12.4-41.7-21.4zM512 144c0 16.1-17.7 36.1-35.3 48.8-12.5 9-26.7 16.2-41.8 21.4 7-25 11.8-53.6 12.8-86.2H512v16z" />
+  </svg>
+        <svg viewBox="0 0 640 512" width="100" title="warehouse">
+    <path d="M504 352H136.4c-4.4 0-8 3.6-8 8l-.1 48c0 4.4 3.6 8 8 8H504c4.4 0 8-3.6 8-8v-48c0-4.4-3.6-8-8-8zm0 96H136.1c-4.4 0-8 3.6-8 8l-.1 48c0 4.4 3.6 8 8 8h368c4.4 0 8-3.6 8-8v-48c0-4.4-3.6-8-8-8zm0-192H136.6c-4.4 0-8 3.6-8 8l-.1 48c0 4.4 3.6 8 8 8H504c4.4 0 8-3.6 8-8v-48c0-4.4-3.6-8-8-8zm106.5-139L338.4 3.7a48.15 48.15 0 0 0-36.9 0L29.5 117C11.7 124.5 0 141.9 0 161.3V504c0 4.4 3.6 8 8 8h80c4.4 0 8-3.6 8-8V256c0-17.6 14.6-32 32.6-32h382.8c18 0 32.6 14.4 32.6 32v248c0 4.4 3.6 8 8 8h80c4.4 0 8-3.6 8-8V161.3c0-19.4-11.7-36.8-29.5-44.3z" />
+  </svg>
+      </div>
+    </section>
+    
+    <section class="section-ten">
+      <h3>We'd love to be your partner</h3>
+      <a href="https://fitness-webapp.onrender.com/home" target="_blank" class="read-article">
+	Read more 👉
+  </a>
+    </section>
+    </div>
+    <br><br><br>
+<footer>
+  <center>
+    <h3>Samprit Ghosh @ coppywright all right reserved</h3>
+    </center>
+  
+  </footer>
+   </body>
+
+
+ 
+
+
+
+
+ </html>
+
+
+ 
